@@ -1,0 +1,16 @@
+{
+  "name": "parse-mail",
+  "version": "1.0.0",
+  "description": "Parse EML files",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Ashutosh Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "command-line-args": "^4.0.7",
+    "eslint": "^4.4.1",
+    "mailparser": "^2.0.5",
+    "shortid": "^2.2.8"
+  }
+}
