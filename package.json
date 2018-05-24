@@ -11,6 +11,7 @@
     "command-line-args": "^4.0.7",
     "eslint": "^4.4.1",
     "mailparser": "^2.0.5",
+    "request": "^2.87.0",
     "shortid": "^2.2.8"
   }
 }

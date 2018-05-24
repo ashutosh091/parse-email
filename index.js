@@ -4,7 +4,7 @@ const fs = require('fs');
 const simpleParser = require('mailparser').simpleParser;
 const readline = require('readline');
 const Readable = require('stream').Readable;
-const http = require('http');
+const request = require('request');
 const url = require('url');
 const shortid = require('shortid');
 const async = require('async');
@@ -40,9 +40,8 @@ function downloadResume(record, callback) {
     let file = fs.createWriteStream(outputFolder + record.name, {
         autoClose: true
     });
-    let request = http.get(record.url, function (response) {
-        response.pipe(file);
-    });
+    let sendReq = request.get(record.url);
+    sendReq.pipe(file);
     callback();
 }
 
